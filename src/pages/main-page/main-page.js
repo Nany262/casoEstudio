@@ -1,17 +1,17 @@
 import "./main-page.css";
-import { PrincipalHeader } from "../../components/header/header";
+import { Header } from "../../components/header/header";
 
 function MainPage() {
   return (
     <div>
-      <PrincipalHeader />
+      <Header nameScreen="Ventana Principal" isPrincipal="true"/>
         <div className="row">
           <div className="col m6 container-buttons">
             <div className="row">
-              <a className="waves-effect waves-light btn-large role">Administrador</a>
+              <a className="waves-effect waves-light btn-large role" href="/administrador">Administrador</a>
             </div>
             <div className="row">
-              <a className="waves-effect waves-light btn-large role vendedor">Vendedor</a>
+              <a className="waves-effect waves-light btn-large role vendedor" href="/vendedor">Vendedor</a>
             </div>
           </div>
           <div className="col m6">
