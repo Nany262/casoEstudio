@@ -1,0 +1,24 @@
+nav {
+  background-color: #faf1e6 !important;
+  height: 100px !important;
+}
+
+img.logo-header {
+  width: 200px;
+  height: 98px;
+}
+
+a.brand-logo {
+  color: black !important;
+}
+
+.title { 
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  left: 40%;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  font-family: "Sniglet", cursive;
+}

@@ -1,0 +1,28 @@
+.principal-logo {
+  width: 850px;
+  height: 500px;
+  margin-top: 10%;
+}
+
+.buttons {
+  align-content: center;
+}
+
+.role {
+  font-size: 50px !important;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 90px;
+  margin-left: 300px;
+  padding-top: 30px !important;
+  padding-bottom: 80px !important;
+}
+
+.vendedor{
+  padding-left: 95px !important;
+  padding-right: 95px !important;
+}
+
+.container-buttons{
+    margin-top: 250px;
+}
