@@ -1,0 +1,16 @@
+.tables {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5% !important;
+}
+
+.options {
+  padding-left: 75px !important;
+  padding-right: 75px !important;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.buttons-options{
+    margin-left: 25% !important;
+}

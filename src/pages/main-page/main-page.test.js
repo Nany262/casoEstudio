@@ -20,11 +20,13 @@ describe("Elements and function on the main page", () => {
     expect(getByTestId(/principal-logo/i)).toBeTruthy();
   });
 
-  it("should redirect to seller screen", () => {
-
+  it("'vendedor' button should redirect to seller screen", () => {
+    const { getByText } = render(<MainPage />);
+    expect(getByText("Vendedor").getAttribute("href")).toBe("/vendedor");
   });
 
-  it("should redirect to login screen", () => {
-    
+  it("'administrador' button should redirect to login screen", () => {
+    const { getByText } = render(<MainPage />);
+    expect(getByText("Administrador").getAttribute("href")).toBe("/administrador");
   });
 });
