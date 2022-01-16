@@ -6,7 +6,7 @@ export const Header = ({nameScreen, isPrincipal=false}) => (
     <div className="nav-wrapper">
       <div className="container">
         <a href="/" className="brand-logo left">
-          {!isPrincipal && <img className="logo-header" src="logo192.png" alt="tatayamba icon" />}
+          {!isPrincipal && <img className="logo-header" src="logo192.png" alt="kaphiy icon"/>}
         </a>
         <h2 className="title"> {nameScreen} </h2>
       </div>

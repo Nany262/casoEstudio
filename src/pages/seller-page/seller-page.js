@@ -7,23 +7,24 @@ function SellerPage() {
   return (
     <div>
       <Header nameScreen="Ventana vendedor" />
-      <div className="container">
-        <form className="tables" onSubmit={handleSubmit}>
-          {list.map((element) => (
-            <Table numberTable={element} key={element}/>
-          ))}
-        </form>
+      <div className="container tables">
+        {list.map((element) => (
+          <Table numberTable={element} key={element} />
+        ))}
       </div>
       <div className="container buttons-options">
-      <a className="waves-effect waves-light btn-large options" href="/registrarEventos">Eventos</a>
-      <a className="waves-effect waves-light btn-large options" href="/">Volver</a>
+        <a
+          className="waves-effect waves-light btn-large options"
+          href="/registrarEventos"
+        >
+          Eventos
+        </a>
+        <a className="waves-effect waves-light btn-large options" href="/">
+          Volver
+        </a>
       </div>
     </div>
   );
-}
-
-function handleSubmit(event) {
-  alert('Seleccionando tabla');
 }
 
 export default SellerPage;

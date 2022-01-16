@@ -14,3 +14,7 @@
 .buttons-options{
     margin-left: 25% !important;
 }
+
+.form-tables{
+  display: inline-block !important;
+}
