@@ -43,7 +43,7 @@ function OperationPage() {
           <div className="row">
             <a
               className="waves-effect waves-light btn-large button-operation "
-              href="/factura"
+              href={`/factura/${id}`}
             >
               Generar Factura
             </a>
@@ -90,7 +90,7 @@ function OperationPage() {
                   <td>{element.cuantity}</td>
                   <td>{element.price}</td>
                   <td>
-                    <Modal product={element} />
+                    <Modal product={element} order="true"/>
                   </td>
                 </tr>
               ))}

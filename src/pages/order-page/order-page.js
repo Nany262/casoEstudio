@@ -4,7 +4,13 @@ import { useParams } from "react-router-dom";
 
 function RequestPage() {
   let { id } = useParams();
-  let productsAdded = [];
+  let productsAdded = [
+    {
+      name: "Granizado Milo",
+      cuantity: 1,
+      price: "$4.000",
+    },
+  ];
   return (
     <div>
       <Header nameScreen={`Agregar pedido (M${id})`} isPrincipal="true" />
@@ -28,13 +34,15 @@ function RequestPage() {
           </thead>
 
           <tbody>
-            <tr key={Math.random()}>
-              <td>Granizado Milo</td>
-              <td>$4.000</td>
-              <td>
-                <input id="input_cuantity" type="number"></input>
-              </td>
-            </tr>
+            {productsAdded.map((element) => (
+              <tr key={Math.random()}>
+                <td>{element.name}</td>
+                <td>{element.price}</td>
+                <td>
+                  <input id="input_cuantity" type="number"></input>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
         <div className="buttons-orders">

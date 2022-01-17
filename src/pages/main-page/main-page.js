@@ -8,7 +8,7 @@ function MainPage() {
         <div className="row">
           <div className="col m6 container-buttons">
             <div className="row">
-              <a className="waves-effect waves-light btn-large role" href="/administrador">Administrador</a>
+              <a className="waves-effect waves-light btn-large role" href="/login">Administrador</a>
             </div>
             <div className="row">
               <a className="waves-effect waves-light btn-large role vendedor" href="/vendedor">Vendedor</a>

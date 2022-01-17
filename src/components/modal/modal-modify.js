@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
-import "./modal-modify.css"
+import "./modal-modify.css";
 
 class Modal extends Component {
   componentDidMount() {
@@ -49,7 +49,7 @@ class Modal extends Component {
             <h4>Modificar pedido</h4>
             <br />
             <p>Producto a modificar: {this.props.product.name}</p>
-            <p>Precio de venta: {this.props.product.price}</p>
+            {this.props.order && <p>Precio de venta: {this.props.product.price}</p>}
             <input type="number" id="cuantity"></input>
             <label htmlFor="cuantity">Cantidad</label>
           </div>

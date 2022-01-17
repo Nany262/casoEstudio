@@ -4,17 +4,32 @@ import "./admin-page.css";
 function AdminPage() {
   return (
     <div>
-      <Header nameScreen="Inicio de sesión" />
+      <Header nameScreen="Administrador" />
       <div className="container admin">
-        <form>
-          <label className="admin-label">USUARIO</label>
-          <input type="text"></input>
-          <label className="admin-label">CONTRASEÑA</label>
-          <input type="password"></input>
-          <button className="waves-effect waves-light btn-large login">
-            Iniciar sesion
-          </button>
-        </form>
+        <div className="row">
+          <a
+            className="waves-effect waves-light btn-large admin-options"
+            href="/inventario"
+          >
+            Inventario
+          </a>
+        </div>
+        <div className="row">
+          <a
+            className="waves-effect waves-light btn-large admin-options"
+            href="/login"
+          >
+            Productos
+          </a>
+        </div>
+        <div className="row">
+          <a
+            className="waves-effect waves-light btn-large admin-options"
+            href="/exportar"
+          >
+            Exportar
+          </a>
+        </div>
       </div>
     </div>
   );

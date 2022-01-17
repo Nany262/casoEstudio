@@ -1,18 +1,8 @@
-.admin {
-  margin-top: 10% !important;
-}
-
-.login {
-  margin-top: 5%;
-  margin-left: 40%;
-}
-
-input{
-    width: 100% !important;
-}
-
-
-.admin-label {
-    margin-top: 5% !important;
-    font-size: 25px !important;
+.admin-options {
+  font-size: 40px !important;
+  text-align: center;
+  padding-top: 30px !important;
+  padding-bottom: 80px !important;
+  margin-left: 25%;
+  width: 600px !important;
 }

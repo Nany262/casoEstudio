@@ -1,0 +1,18 @@
+.admin {
+  margin-top: 10% !important;
+}
+
+.login {
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+input{
+    width: 100% !important;
+}
+
+
+.admin-label {
+    margin-top: 5% !important;
+    font-size: 25px !important;
+}
